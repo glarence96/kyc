@@ -1,5 +1,5 @@
 import React from 'react';
-import GetUserDocs from "./components/GetUserDocs"
+import GetUserDocs from "./components/GetUserDocs";
 
 function App() {
   return (

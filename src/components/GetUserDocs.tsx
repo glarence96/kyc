@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import ImageText from "./ImageText";
 
 const GetUserDocs: React.FC = () => {
     const [selectedFile, setSelectedFile] = useState({} as File);
@@ -24,10 +25,11 @@ const GetUserDocs: React.FC = () => {
   return (
     <div> 
         <input type="file" onChange={onFileChange} />
-        {fileData()} 
+        {fileData()}
         <button onClick={onFileUpload}> 
             Upload! 
-        </button> 
+        </button>
+        <ImageText /> 
     </div>
   )
 }
